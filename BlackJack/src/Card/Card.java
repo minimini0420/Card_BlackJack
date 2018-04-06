@@ -17,4 +17,10 @@ public class Card {
 		this.pattern = pattern;
 	}
 	
+	@Override
+	public String toString() {
+		return String.format("Draw Card:[pattern = %s, number = %s]", getPattern(), getNumber());
+	}
 }
+
+
