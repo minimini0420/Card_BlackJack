@@ -2,15 +2,18 @@ package Card;
 
 public class Dealer {
 	Deck deck;
-	Card card;
+
 	
-	public Dealer(Deck d) {
+	public Dealer(Deck d) {   // 이걸 왜 이렇게 하는지 알아보자!!! 시
 		this.deck = d;
 	}
-	Card c = .Card_draw_and_out();
 	
-	
+	public Card dealer_select_card() {
+		Card c = deck.card_draw_and_out();
+		return c;
+	}
 }
+	
 
 
 //추가로 카드를 받는다.

@@ -11,8 +11,9 @@ public class Gamer {
 		this.deck = d;
 	}
 	
-	public Card Gamer_open_card() {
-		
+	public Card gamer_select_card() {
+		Card c =deck.card_draw_and_out();
+		return c;
 	}
 //	
 }

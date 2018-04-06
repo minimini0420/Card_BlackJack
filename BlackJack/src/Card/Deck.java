@@ -23,7 +23,7 @@ public class Deck {
 		}
 	}
 		
-	public Card Card_draw_and_out() {
+	public Card card_draw_and_out() {
 		int choice = r.nextInt(BlackJack_deck.size());
 		System.out.println(BlackJack_deck.size());
 		Card card_selected = BlackJack_deck.get(choice);
