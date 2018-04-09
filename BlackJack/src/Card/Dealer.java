@@ -1,16 +1,25 @@
 package Card;
 
+import java.util.ArrayList;
+
 public class Dealer {
 	Deck deck;
-
 	
-	public Dealer(Deck d) {   // 이걸 왜 이렇게 하는지 알아보자!!! 시
+	private ArrayList<Card> Dealer_receive = new ArrayList();
+	
+	public Dealer(Deck d) {   // 이걸 왜 이렇게 하는지 알아보자!!!
 		this.deck = d;
 	}
 	
-	public Card dealer_select_card() {
-		Card c = deck.card_draw_and_out();
-		return c;
+	public void dealerAddCard() {
+		Card Dealer = deck.card_draw_and_out();
+		Dealer_receive.add(Dealer);
+	}
+	
+	public Card dealer_open() {
+		for(int i=0; i<Dealer_receive.size(); i++) {
+			System.out.println(Dealer_receive.get(i));
+		}
 	}
 }
 	

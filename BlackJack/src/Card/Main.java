@@ -18,7 +18,7 @@ public class Main {
 //		System.out.println(deck.choice);
 		
 		System.out.println(card);
-		System.out.println(dealer.dealer_select_card());
+//		System.out.println(dealer.dealer_select_card());
 		System.out.println(gamer.gamer_select_card());
 //		System.out.println(g.Gamer_draw());
 //		

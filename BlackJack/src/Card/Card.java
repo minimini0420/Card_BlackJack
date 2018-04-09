@@ -1,8 +1,9 @@
 package Card;
 
 public class Card {
-	private String number;
 	private String pattern;
+	private String number;
+	
 	
 	public String getNumber() {
 		return number;
